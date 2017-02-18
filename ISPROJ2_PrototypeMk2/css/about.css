@@ -1,0 +1,66 @@
+﻿/*
+ * Start Bootstrap - Business Frontpage (http://startbootstrap.com/)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+
+body {
+    padding-top: 50px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+}
+
+/* Header Image Background - Change the URL below to your image path (example: ../images/background.jpg) */
+
+.business-header {
+    height: 400px;
+    background: url('http://www.leaseplusgroup.com.au/Images/About-us-header.jpg') center center no-repeat scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+/* 
+}
+
+/* Customize the text color and shadow color and to optimize text legibility. */
+
+.tagline {
+    text-shadow: 0 0 10px #000;
+    color: #fff;
+}
+
+.img-center {
+    margin: 0 auto;
+}
+
+footer {
+    margin: 50px 0;
+}
+
+p {
+    color: tan;
+}
+
+
+.client-logo-main{background:#fff;}
+.client-logo {margin: 0;display: inline-block;width: 100%;text-align: center;position:relative;}
+.client-logo img {margin: 25px 85px 25px 0;vertical-align: middle;}
+.client-logo img:last-child {margin: 0;}
+.container.client-logo-main .client-logo .owl-clients-v1, .container.client-logo-main .client-logo .owl-carousel .owl-wrapper { height: 116px; }
+.container.client-logo-main .client-logo .owl-clients-v1 .owl-wrapper-outer { display: inline-block; min-height: 128px; }
+.container.client-logo-main .client-logo .owl-clients-v1 .item { border: 1px solid #F7F7F7; margin: 10px; padding: 12px 0; position: relative; text-align: center; height: 90px; display: table-cell; vertical-align: middle; }
+.container.client-logo-main .client-logo .owl-clients-v1 img { height: auto; width: 200px; max-height: 70px; max-width: 75%; vertical-align: top; }
+.owl-carousel .owl-wrapper, .owl-carousel .owl-item { display: table; }
+.customNavigation a.owl-btn {position: absolute;top: 0;height: 100%;width: 25px;background: #1ABC9C;font-size: 25px;opacity: 0.5;cursor: pointer;transition: 0.2s all;}
+.customNavigation a.owl-btn:hover {opacity: 1;}
+.customNavigation a.owl-btn.next {right: -25px;}
+.customNavigation a.owl-btn.prev {left: -25px;}
+.customNavigation a.owl-btn i.fa {position: absolute;top: 50%;left: 50%;width: 24px;height: 26px;margin-top: -13px;margin-left: -12px;color: #fff;}
+
+.client-box .three-col {text-align: center;box-sizing: border-box;border: 2px solid #e8e7e7;height: 90px;display: table;transition: 0.5s all;-webkit-transition: 0.5s all;-moz-transition: 0.5s all;width: 24%;margin-right: 1.25%;margin-bottom: 1.25%; }
+.client-box .three-col.last-col{margin-right: 0;}
+.client-box .three-col .img-box {width: 100%;vertical-align: middle;display: table-cell;}
+.client-box .three-col .img-box img{max-width:230px; width:auto; -webkit-filter: grayscale(1);-moz-filter: grayscale(1);-ms-filter: grayscale(1);filter: grayscale(1);transition: 0.5s all;-webkit-transition: 0.5s all;-moz-transition: 0.5s all;opacity: 0.4;max-height: 70px;vertical-align: top; column-count: 4;}
+.client-box .three-col:hover .img-box img{-webkit-filter: grayscale(0);-moz-filter: grayscale(0);-ms-filter: grayscale(0);filter: grayscale(0);opacity: 1;}
+.client-box .three-col:hover{border-color:#1abc9c;}
+.client-box {display: inline-block;width: 100%;vertical-align: bottom;margin-bottom: 30px;}
