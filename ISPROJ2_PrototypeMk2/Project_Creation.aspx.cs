@@ -29,7 +29,7 @@ namespace PROJ2_PTE
             {
                 lblAuth.Text = (string)(Session["Auth"]);
                 SqlConnection con = new SqlConnection();
-                con.ConnectionString = "Server=DESKTOP-Q0BI1S3;Database=ISPROJ2;Trusted_Connection=True;";
+                con.ConnectionString = "Server=localhost;Database=ISPROJ2;Trusted_Connection=True;";
                 con.Open();
 
                 SqlCommand cmd = new SqlCommand("SELECT TOP 1 proj_id FROM Project ORDER BY proj_id DESC", con);

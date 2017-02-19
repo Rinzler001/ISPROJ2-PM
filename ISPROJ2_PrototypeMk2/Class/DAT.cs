@@ -10,7 +10,7 @@ namespace PROJ2_PTE.Class
 {
     public static class DAT
     {
-        static string ConnStr = "Server=DESKTOP-Q0BI1S3;Database=ISPROJ2;Trusted_Connection=True;";
+        static string ConnStr = "Server=localhost;Database=ISPROJ2;Trusted_Connection=True;";
         static SqlConnection SCN;
 
         static void Open()
