@@ -162,5 +162,21 @@ namespace PROJ2_PTE.Class
             return ret;
         }
 
+        public static string insertBOM(string BOMID, int BOMwho, string BOMProj)//must return a scalar value
+        {
+            Open();
+            SqlCommand cmd = new SqlCommand("INSERT INTO BillofMaterial(bom_poNo, bom_preparedBy, proj_code) OUTPUT inserted.bom_no VALUES (@pono, @preparedby, @projcode)", SCN);
+            cmd.Parameters.AddWithValue("@pono", BOMID);
+            cmd.Parameters.AddWithValue("@preparedby", BOMwho);
+            cmd.Parameters.AddWithValue("@projcode", BOMProj);
+            Close();
+            return cmd.ExecuteScalar().ToString();
+        }
+
+        public static void insertBOMdet()
+        {
+
+        }
+
     } //static class END-------------------------------><<
 }

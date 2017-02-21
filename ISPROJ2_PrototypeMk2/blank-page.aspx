@@ -204,14 +204,23 @@
                         <form id="form1" runat="server">
                             <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
 
-                            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ISPROJ2ConnectionString2 %>" SelectCommand="SELECT [Cl_ID], [Comp_Name] FROM [Client]"></asp:SqlDataSource>
-                            <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:ISPROJ2ConnectionString2 %>" SelectCommand="SELECT [Em_ID], [F_Name], [L_Name] FROM [Employee] WHERE ([Position] = @Position)">
-                                <SelectParameters>
-                                    <asp:Parameter DefaultValue="5" Name="Position" Type="Int32" />
-                                </SelectParameters>
-                            </asp:SqlDataSource>
-
                             <div>
+
+        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ISPROJ2ConnectionString %>" SelectCommand="SELECT [client_id], [client_name] FROM [Client]"></asp:SqlDataSource>
+        <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:ISPROJ2ConnectionString %>" SelectCommand="SELECT [emp_user_id], [emp_fname] + ' '  + [emp_lname] FROM [Personnel] WHERE ([emp_position] = @emp_position)">
+            <SelectParameters>
+                <asp:Parameter DefaultValue="5" Name="emp_position" />
+            </SelectParameters>
+        </asp:SqlDataSource>
+    
+        <asp:SqlDataSource ID="SqlDataSource3" runat="server" ConnectionString="<%$ ConnectionStrings:ISPROJ2ConnectionString %>" SelectCommand="SELECT [emp_user_id] AS 'ID', [emp_fname]+' '+[emp_lname] AS 'FULL NAME' FROM [Personnel] WHERE ([emp_position] = @emp_position)">
+            <SelectParameters>
+                <asp:Parameter DefaultValue="6" Name="emp_position" />
+            </SelectParameters>
+        </asp:SqlDataSource>
+        
+        <asp:SqlDataSource ID="SqlDataSource4" runat="server" ConnectionString="<%$ ConnectionStrings:ISPROJ2ConnectionString %>" SelectCommand="SELECT [stock_code], [stock_id] FROM [Stock]"></asp:SqlDataSource>
+                                <br />
 
                                 Welcome
 
@@ -268,6 +277,7 @@
                                 <asp:Label ID="Label8" runat="server" Text="Label"></asp:Label>
                                 <br />
                                 <asp:TextBox ID="txtPrDesc" runat="server" Height="110px" TextMode="MultiLine" Width="510px"></asp:TextBox>
+                                <asp:HiddenField ID="Counter" runat="server" />
                                 <br />
                                 <br />
                                 <br />
@@ -343,11 +353,6 @@
                                 <br />
                                 <asp:Button ID="Button1" runat="server" Text="Add Task" OnClick="Button1_Click" />
                                 <br />
-                                <asp:SqlDataSource ID="SqlDataSource3" runat="server" ConnectionString="<%$ ConnectionStrings:ISPROJ2ConnectionString2 %>" SelectCommand="SELECT [Em_ID], [F_Name], [L_Name] FROM [Employee] WHERE ([Position] = @Position)">
-                                    <SelectParameters>
-                                        <asp:Parameter DefaultValue="6" Name="Position" Type="Int32" />
-                                    </SelectParameters>
-                                </asp:SqlDataSource>
 
                                 <br />
                                 <table class="auto-style9">

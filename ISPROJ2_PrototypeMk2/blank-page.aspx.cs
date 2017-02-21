@@ -16,7 +16,7 @@ namespace ISPROJ2_PrototypeMk2
         {
             lblAuth.Text = (string)(Session["Auth"]);
             SqlConnection con = new SqlConnection();
-            con.ConnectionString = "Server=DIANE\\FRANCISCO;Database=ISPROJ2;Trusted_Connection=True;";
+            con.ConnectionString = "Server=localhost;Database=ISPROJ2;Trusted_Connection=True;";
             con.Open();
 
             SqlCommand cmd = new SqlCommand("SELECT TOP 1 Pr_ID FROM Project ORDER BY Pr_ID DESC", con);
