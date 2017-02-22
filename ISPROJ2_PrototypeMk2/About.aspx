@@ -120,85 +120,9 @@
             
                 <h2>Organizational Chart</h2>
                 <div class="orgchart"></div>
-                    <center><img width="1000" height="500" src="images/orgchart.png" alt=""></center>
+                    <center><img width="1100" height="800" class="img-responsive" src="images/orgchart.png" alt=""></center>
  
-        <!-- /.row -->
-
-        <!--
-        <h2>List of Clients</h2>
-        <div class="client-box">
-        <div class="three-col">
-		<a class="img-box">
-		<img width="189" height="69" src="http://www.manilaforwarder.com/smdc/images/smdc_logo2.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="">			                        
-		</a>
-		</div>         		
-             		
-        <div class="three-col">
-		<a class="img-box">
-		<img width="312" height="162" src="http://vistalandinternational.com/wp-content/uploads/logo_outline.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="">
-		</a>
-		</div>        		
-             		
-        <div class="three-col">
-        <a class="img-box">
-		<img width="420" height="120" src="http://i.imgur.com/obEFH.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="">			                        
-		</a>
-		</div>
-	                    		 		
-        <div class="three-col last-col">
-		<a class="img-box">
-		<img width="264" height="191" src="http://edge.pse.com.ph/clogo/172/cl52d782cbr574.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="">			                        
-		</a>
-		</div>
-	                    		
-        <div class="three-col">
-		<a class="img-box">
-		<img width="174" height="72" src="http://fontmeme.com/images/cebu-pacific-old-logo.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="">			                        
-		</a>
-		</div>
-	                    		
-        <div class="three-col">
-		<a class="img-box">
-		<img width="139" height="123" src="http://www8.gmanews.tv/webpics/v3/2012/06/PUREGOLD1.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="">			                        
-		</a>
-        </div>
-	                    		
-        <div class="three-col">
-		<a class="img-box">
-		<img width="192" height="47" src="http://www.mdc.com.ph/files.db/content.block/images/161-mdc-buildplus-logo-2016.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="">			                        
-		</a>
-		</div>
-	    
-        <div class="three-col last-col">
-		<a class="img-box">
-		<img width="369" height="136" src="http://edge.pse.com.ph/clogo/644/cl52e9eca1r185.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="">			                        
-		</a>
-		</div>
-	                    		
-        <div class="three-col">
-        <a class="img-box">
-		<img width="250" height="80" src="https://upload.wikimedia.org/wikipedia/commons/8/83/Ayala_Malls_Logo.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="">			                        
-		</a>
-		</div>
-	                    		
-        <div class="three-col">
-		<a class="img-box">
-		<img width="176" height="99" src="http://logodatabases.com/wp-content/uploads/2012/02/ibm-logo.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="">			                        
-		</a>
-		</div>
-	                    		
-        <div class="three-col">
-		<a class="img-box">
-		<img width="143" height="62" src="http://edge.pse.com.ph/clogo/147/cl52d50ad0r836.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="">			                        
-		</a>
-		</div>
-	                    		
-        <div class="three-col last-col">
-		<a class="img-box">
-		<img width="225" height="54" src="http://sa.kapamilya.com/absnews/abscbnnews/media/2017/logos/megaworld-logo.jpg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="">			                        
-		</a>
-		</div>
-        -->
+        
 	       		
         <!-- /.row -->
 

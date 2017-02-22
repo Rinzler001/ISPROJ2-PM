@@ -12,8 +12,7 @@ body {
 
 .business-header {
     height: 400px;
-    /* image link for old one: https://static.pexels.com/photos/2324/skyline-buildings-new-york-skyscrapers.jpg*/
-    background: url('http://southernrightdesign.co.za/images/sliders/Engineering-Design.jpg') center center no-repeat scroll;
+    background: url('../images/Headers/home.jpg') center center no-repeat scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;

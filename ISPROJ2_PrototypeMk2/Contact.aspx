@@ -90,36 +90,36 @@
         <hr>
 
         <div class="row">
-            <div class="col-sm-20">
+            <div class="col-sm-12">
                 <h2>Contact Us</h2>
                 <p>We’d love to hear from you! Send us your queries about Prime Power Energie System’s products and services and we’ll get in touch with you soon.</p>
 
+       
                 <h2>Contact Information</h2>
-                
                 <div class="row">
-                <div class="col-xs-12 col-sm-4 col-md-3 col-md-offset-1 col-lg-3 col-lg-offset-1 text-center content-header"> <img class="img-responsive" src="https://www.wyeth.com.ph/wp-content/themes/wyeth/images/wyeth-contact-us-icon_05.png">
-                        <h3>PHONE</h3>
-                            <a class="phone-number" href="tel:+6328846600">+632-5843398 </a> </div>
-                <div class="col-xs-12 col-sm-4 col-md-3 col-lg-4 text-center content-header"> <img class="img-responsive" src="https://www.wyeth.com.ph/wp-content/themes/wyeth/images/wyeth-contact-us-icon_10.png">
+                <div class="col-xs-12 col-sm-4 col-md-3 col-md-offset-1 col-lg-3 col-lg-offset-1 text-center content-header"> <center><img class="img-responsive" src="https://www.wyeth.com.ph/wp-content/themes/wyeth/images/wyeth-contact-us-icon_05.png"></center>
+                        <h3>PHONE NUMBER</h3>
+                            <a class="phone-number" href="tel:+6328846600">+632-5843398 </a> 
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-3 col-lg-4 text-center content-header"> <center><img class="img-responsive" src="https://www.wyeth.com.ph/wp-content/themes/wyeth/images/wyeth-contact-us-icon_10.png"></center>
                         <h3>LOCATION</h3>
                     <address>
                         10th Flr. Atlanta Center, Greenhills San Juan City Metro Manila
                     </address>
                 </div>
-                <div class="col-xs-12 col-sm-4 col-md-3 col-lg-4 text-center content-header"> <img class="img-responsive" src="images/icon23.png" />
-                        <h3>CONTACT DETAILS</h3>
-                        <a class="phone-number" href="tel:+6328199384 ">+632-5843398 </a> ● <a class="email" href="mailto:primepower@gmail.com">primepower@gmail.com</a> 
+                <div class="col-xs-12 col-sm-4 col-md-3 col-lg-4 text-center content-header"> <center><img class="img-responsive" src="images/icon1.png"></center>
+                        <h3>EMAIL ADDRESS</h3>
+                        <a class="email" href="mailto:primepower@gmail.com">primepower@gmail.com</a>
                 </div>
- 
+	       		
         <!-- /.row -->
-        
-        <!-- /.row -->
+
 
         <!-- Footer -->
         <footer>
             <div class="row">
                 <div class="col-lg-12">
-                        <hr>
+                    <hr>
                     <p>Copyright &copy; Project Resource and Information Monitoring System 2017</p>
                 </div>
             </div>
@@ -127,6 +127,7 @@
         </footer>
 
     </div>
+
     <!-- /.container -->
 
     <!-- jQuery -->

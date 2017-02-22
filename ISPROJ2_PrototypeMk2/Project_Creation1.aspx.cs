@@ -8,15 +8,16 @@ using System.Data;
 using System.Data.SqlClient;
 using PROJ2_PTE.Class;
 
-namespace ISPROJ2_PrototypeMk2
+namespace PROJ2_PTE
 {
-    public partial class blank_page : System.Web.UI.Page
+    public partial class Project_Creation : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            //lblAuth.Text = Request.QueryString["auth"];
             lblAuth.Text = (string)(Session["Auth"]);
             SqlConnection con = new SqlConnection();
-            con.ConnectionString = "Server=.;Database=ISPROJ2;Trusted_Connection=True;";
+            con.ConnectionString = "Server=DIANE\\FRANCISCO;Database=ISPROJ2;Trusted_Connection=True;";
             con.Open();
 
             SqlCommand cmd = new SqlCommand("SELECT TOP 1 Pr_ID FROM Project ORDER BY Pr_ID DESC", con);
@@ -27,10 +28,29 @@ namespace ISPROJ2_PrototypeMk2
             int pid = int.Parse(dt.Rows[0][0].ToString()) + 1;
 
             txtProjID.Text = pid.ToString();
+
+            //Business Biz = new Business();
+            //GridView4.DataSource = Biz.getEmp();
+            //GridView4.DataBind();
+
+            
+        }
+
+        protected void Button3_Click(object sender, EventArgs e)
+        {
+
+            Business.createProj(txtProjID.Text, txtProjTitle.Text, txtRefNum.Text, txtPrDesc.Text, DDClient.SelectedValue, 
+                Session["Auth"].ToString(), DDProjLead.SelectedValue, txtStDate.Text, txtEnDate.Text, (DataTable)Session["TaskMembers"], 
+                (DataTable)Session["TaskOnly"]);
+
+
+            
+            Response.Redirect("PrCreateSuccess.aspx?=" + Request.QueryString["auth"]);
         }
 
         protected void Button1_Click(object sender, EventArgs e)
         {
+
             DataTable TaskMembers;
             DataTable TaskOnly;
             string str = "";
@@ -101,18 +121,11 @@ namespace ISPROJ2_PrototypeMk2
 
                 } ////IF-ELSE CHECKBOX END
 
-            }
-        }
-
-        protected void Button3_Click(object sender, EventArgs e)
-        {
-            Business.createProj(txtProjID.Text, txtProjTitle.Text, txtRefNum.Text, txtPrDesc.Text, DDClient.SelectedValue,
-            Session["Auth"].ToString(), DDProjLead.SelectedValue, txtStDate.Text, txtEnDate.Text, (DataTable)Session["TaskMembers"],
-            (DataTable)Session["TaskOnly"]);
+            }//// END OF FOREACH LOOP-----------------------------------------------------=================================
 
 
 
-            Response.Redirect("PrCreateSuccess.aspx?=" + Request.QueryString["auth"]);
+            //http://asp.net-informations.com/gridview/checkbox.htm --------------------------------============================
         }
     }
 }

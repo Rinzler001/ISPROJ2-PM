@@ -6,7 +6,7 @@
 
 .business-header {
     height: 400px;
-    background: url('http://files.www.bsgnew.gethifi.com/work/clients/our-clients_header.jpg') center center no-repeat scroll;
+    background: url('../images/Headers/clients.jpg') center center no-repeat scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -41,4 +41,10 @@ h3 {
 
 h1 {
     color: white;
+}
+
+.img-responsive {
+    max-width: 100%; 
+    display:block; 
+    height: auto;
 }

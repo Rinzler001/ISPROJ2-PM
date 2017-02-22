@@ -122,22 +122,22 @@
 
         <div class="row">
             <div class="col-sm-3">
-                <img class="img-circle img-responsive img-center" src="images/manage-2.png" alt="">
+                <img class="img-circle img-responsive img-center" src="images/Team/manage-2.png" alt="">
                 <h2>Project Leader</h2>
                 <p>These marketing boxes are a great place to put some information. These can contain summaries of what the company does, promotional information, or anything else that is relevant to the company. These will usually be below-the-fold.</p>
             </div>
             <div class="col-sm-3">
-                <img class="img-circle img-responsive img-center" src="images/team-1.jpg" alt="">
+                <img class="img-circle img-responsive img-center" src="images/Team/team-1.jpg" alt="">
                 <h2>Developer</h2>
                 <p>The images are set to be circular and responsive. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
             </div>
             <div class="col-sm-3">
-                <img class="img-circle img-responsive img-center" src="images/team-2.jpg" alt="">
+                <img class="img-circle img-responsive img-center" src="images/Team/team-2.jpg" alt="">
                 <h2>UI Designer</h2>
                 <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
             </div>
             <div class="col-sm-3">
-                <img class="img-circle img-responsive img-center" src="images/manage-4.png" alt="">
+                <img class="img-circle img-responsive img-center" src="images/Team/manage-4.png" alt="">
                 <h2>QA Tester</h2>
                 <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
             </div>

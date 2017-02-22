@@ -6,7 +6,7 @@
 
 .business-header {
     height: 400px;
-    background: url('http://bluepeakadvisors.com/wp-content/uploads/2014/09/services-header.png') center center no-repeat scroll;
+    background: url('../images/Headers/services.png') center center no-repeat scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;

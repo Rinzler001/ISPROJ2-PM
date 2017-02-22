@@ -28,7 +28,7 @@ namespace ISPROJ2_PrototypeMk2
         {
             if (Business.chkLogIn(txtAcct.Text, txtPass.Text).Item1.Equals(false))
             {
-                Label1.Text = "invalid Details!";
+                Label1.Text = "Invalid Details!";
             }
             else if (string.IsNullOrWhiteSpace(txtAcct.Text) && string.IsNullOrWhiteSpace(txtPass.Text))
             {

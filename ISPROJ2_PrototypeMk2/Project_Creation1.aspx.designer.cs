@@ -7,10 +7,10 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ISPROJ2_PrototypeMk2 {
+namespace PROJ2_PTE {
     
     
-    public partial class blank_page {
+    public partial class Project_Creation {
         
         /// <summary>
         /// form1 control.
@@ -112,6 +112,15 @@ namespace ISPROJ2_PrototypeMk2 {
         protected global::System.Web.UI.WebControls.TextBox txtStDate;
         
         /// <summary>
+        /// txtStDate_CalendarExtender control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::AjaxControlToolkit.CalendarExtender txtStDate_CalendarExtender;
+        
+        /// <summary>
         /// txtEnDate control.
         /// </summary>
         /// <remarks>
@@ -119,6 +128,15 @@ namespace ISPROJ2_PrototypeMk2 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtEnDate;
+        
+        /// <summary>
+        /// txtEnDate_CalendarExtender control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::AjaxControlToolkit.CalendarExtender txtEnDate_CalendarExtender;
         
         /// <summary>
         /// txtRefNum control.

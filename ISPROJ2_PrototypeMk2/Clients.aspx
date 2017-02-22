@@ -93,67 +93,7 @@
                 <h1 class="page-header">Our Clients</h1>
             </div>
 
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a class="thumbnail" href="#">
-                    <img class="img-responsive" src="http://sminvestments.com/sites/default/files/SM%20Corp_PRIME_RGB_POS.jpg" alt="">
-                </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a class="thumbnail" href="#">
-                    <img class="img-responsive" src="http://vistalandinternational.com/wp-content/uploads/logo_outline.png" alt="">
-                </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a class="thumbnail" href="#">
-                    <img class="img-responsive" src="http://i.imgur.com/obEFH.png" alt="">
-                </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a class="thumbnail" href="#">
-                    <img class="img-responsive" src="http://edge.pse.com.ph/clogo/172/cl52d782cbr574.jpg" alt="">
-                </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a class="thumbnail" href="#">
-                    <img class="img-responsive" src="http://fontmeme.com/images/cebu-pacific-old-logo.png" alt="">
-                </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a class="thumbnail" href="#">
-                    <img class="img-responsive" src="http://www8.gmanews.tv/webpics/v3/2012/06/PUREGOLD1.jpg" alt="">
-                </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a class="thumbnail" href="#">
-                    <img class="img-responsive" src="http://www.mdc.com.ph/files.db/content.block/images/161-mdc-buildplus-logo-2016.jpg" alt="">
-                </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a class="thumbnail" href="#">
-                    <img class="img-responsive" src="http://edge.pse.com.ph/clogo/644/cl52e9eca1r185.jpg" alt="">
-                </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a class="thumbnail" href="#">
-                    <img class="img-responsive" src="https://upload.wikimedia.org/wikipedia/commons/8/83/Ayala_Malls_Logo.png" alt="">
-                </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a class="thumbnail" href="#">
-                    <img class="img-responsive" src="http://logodatabases.com/wp-content/uploads/2012/02/ibm-logo.jpg" alt="">
-                </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a class="thumbnail" href="#">
-                    <img class="img-responsive" src="http://edge.pse.com.ph/clogo/147/cl52d50ad0r836.jpg" alt="">
-                </a>
-            </div>
-            <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                <a class="thumbnail" href="#">
-                    <img class="img-responsive" src="http://sa.kapamilya.com/absnews/abscbnnews/media/2017/logos/megaworld-logo.jpg" alt="">
-                </a>
-            </div>
-        </div>
+            <center><img width="800" height="400" class="img-responsive" src="images/Clients/clients.png" alt=""></center>
 
         <hr>
 

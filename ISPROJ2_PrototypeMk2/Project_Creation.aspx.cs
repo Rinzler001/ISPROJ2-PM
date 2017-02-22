@@ -47,15 +47,27 @@ namespace PROJ2_PTE
 
         protected void Button3_Click(object sender, EventArgs e)
         {
-
+            string projid = txtProjID.Text;
             Business.createProj(txtProjID.Text, txtProjTitle.Text, txtRefNum.Text, txtPrDesc.Text, DDClient.SelectedValue, 
                 Session["Auth"].ToString(), DDProjLead.SelectedValue, txtStDate.Text, txtEnDate.Text, (DataTable)Session["TaskMembers"], 
                 (DataTable)Session["TaskOnly"]);
 
+            string BOMID = Business.insrtBOM("BOM-O-" + projid.Substring(projid.Length - 3), Session["Auth"].ToString(), txtProjID.Text);
+
+            foreach (GridViewRow r in GridView1.Rows)
+            {
+                for (int qty = 0; qty < int.Parse(r.Cells[2].Text); qty++)
+                {
+                    Business.insrtBD(BOMID, r.Cells[3].Text);
+                }
+            }
+
+
             Session.Remove("TaskOnly");
             Session.Remove("TaskMembers");
-            
-            Response.Redirect("PrCreateSuccess.aspx?=" + Request.QueryString["auth"]);
+            Session.Remove("ProjItems");
+
+            Response.Redirect("dashboard.aspx");
         }
 
         protected void Button1_Click(object sender, EventArgs e)
@@ -81,10 +93,11 @@ namespace PROJ2_PTE
                 TaskOnly.Columns.Add("Task Preq");
 
             }
-            
-            
+
+            string projid = txtProjID.Text;
             TaskRow = TaskOnly.NewRow();
-            TaskRow["Task ID"] = txtProjID.Text[txtProjID.Text.Length - 1] +  Counter.Value.PadLeft(3,'0');
+            //TaskRow["Task ID"] = txtProjID.Text[txtProjID.Text.Length - 3] + Counter.Value.PadLeft(3, '0');
+            TaskRow["Task ID"] = projid.Substring(projid.Length - 3) + Counter.Value.PadLeft(3, '0');
             TaskRow["Task Details"] = txtTskDet.Text;
             TaskRow["Task SDate"] = txtTskSdate.Text;
             TaskRow["Task EDate"] = txtTskEdate.Text;

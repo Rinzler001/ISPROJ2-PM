@@ -6,7 +6,7 @@
 
 .business-header {
     height: 400px;
-    background: url('http://www.oneaston.com/images/about_header.jpg') center center no-repeat scroll;
+    background: url('../images/Headers/products.jpg') center center no-repeat scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;

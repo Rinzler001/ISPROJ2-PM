@@ -101,5 +101,15 @@ namespace PROJ2_PTE.Class
         {
             return DAT.getItemDetail(int.Parse(ItemID));
         }
+
+        public static string insrtBOM(string pono, string prepBy, string projCode)
+        {
+            return DAT.insertBOM(pono, int.Parse(prepBy), projCode);
+        }
+
+        public static void insrtBD(string BOMid, string stockcode)
+        {
+            DAT.insertBOMDet(stockcode, int.Parse(BOMid));
+        }
     }  // CLASS END HERE -----------------------------------------><<
 }

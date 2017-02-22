@@ -37,7 +37,7 @@
                     ACCOUNT ID
                 </td>
                 <td>
-                    <asp:TextBox ID="txtAcct" runat="server" MaxLength="8" Width="165px"></asp:TextBox>
+                    <asp:TextBox ID="txtAcct" runat="server" MaxLength="8" Width="170px"></asp:TextBox>
                 </td>
 
             </tr>
@@ -45,7 +45,7 @@
                 <td style="padding: 10px" class="auto-style1">
                     PASSWORD </td>
                 <td>
-                    <asp:TextBox ID="txtPass" runat="server" MaxLength="15" TextMode="Password" Width="165px"></asp:TextBox>
+                    <asp:TextBox ID="txtPass" runat="server" TextMode="Password" Width="170px"></asp:TextBox>
                 </td>
 
             </tr>
@@ -58,8 +58,10 @@
                         <asp:Label ID="Label1" runat="server" ForeColor="Red"></asp:Label>
                     </div>
                     
+                    <div id="buttons">
                     <asp:Button ID="Button1" runat="server" class="btn" Text="LOGIN" OnClick="Button1_Click" />
                     <asp:Button ID="Button2" runat="server" class="btn" Text="CANCEL" OnClick="Button2_Click1" />
+                    </div>
                 </td>
             </tr>
         </table>
@@ -69,4 +71,3 @@
     </form>
 </body>
 </html>
-
