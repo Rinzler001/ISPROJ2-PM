@@ -78,7 +78,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1 class="tagline">PRIME POWER ENERGIE SYSTEMS INC.</h1>
+                    <h1 class="tagline">HI DIANE, CHANGED THE TAGLINE.</h1>
                 </div>
             </div>
         </div>
