@@ -99,7 +99,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="About.aspx" />
-    <Content Include="blank-page.aspx" />
     <Content Include="Clients.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="css2\bootstrap-rtl.css" />
@@ -156,9 +155,6 @@
     <Content Include="js\jquery.js" />
     <Content Include="LOGOUT.aspx" />
     <Content Include="packages.config" />
-    <Content Include="ApplicationInsights.config">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -196,13 +192,6 @@
     </Compile>
     <Compile Include="About.aspx.designer.cs">
       <DependentUpon>About.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="blank-page.aspx.cs">
-      <DependentUpon>blank-page.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="blank-page.aspx.designer.cs">
-      <DependentUpon>blank-page.aspx</DependentUpon>
     </Compile>
     <Compile Include="Class\Business.cs" />
     <Compile Include="Class\DAT.cs" />
