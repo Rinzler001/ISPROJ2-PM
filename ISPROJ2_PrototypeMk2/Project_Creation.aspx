@@ -120,7 +120,7 @@
         <hr />
         DETAILS: (Tasks and Equipment)<br />
         <br />
-        <ajaxToolkit:ComboBox ID="ComboBox1" runat="server" AutoCompleteMode="Suggest" DataSourceID="SqlDataSource4" DataTextField="stock_code" DataValueField="stock_id" MaxLength="0" style="display: inline;" OnSelectedIndexChanged="ComboBox1_SelectedIndexChanged" OnTextChanged="ComboBox1_TextChanged">
+        <ajaxToolkit:ComboBox ID="ComboBox1" runat="server" AutoCompleteMode="Suggest" DataSourceID="SqlDataSource4" DataTextField="stock_code" DataValueField="stock_id" MaxLength="0" style="display: inline;" OnSelectedIndexChanged="ComboBox1_SelectedIndexChanged" OnTextChanged="ComboBox1_TextChanged" AutoPostBack="True">
         </ajaxToolkit:ComboBox>
         <asp:SqlDataSource ID="SqlDataSource4" runat="server" ConnectionString="<%$ ConnectionStrings:ISPROJ2ConnectionString %>" SelectCommand="SELECT [stock_code], [stock_id] FROM [Stock]"></asp:SqlDataSource>
         <asp:TextBox ID="TextBox10" runat="server" placeholder="Quantity"></asp:TextBox>
@@ -129,7 +129,7 @@
         <asp:Label ID="Label11" runat="server" Text="Label"></asp:Label>
         <br />
         <br />
-        <asp:GridView ID="GridView1" runat="server" Width="839px" BackColor="#CCCCCC" BorderColor="#999999" BorderStyle="Solid" BorderWidth="3px" CellPadding="4" CellSpacing="2" ForeColor="Black">
+        <asp:GridView ID="GridView1" runat="server" Width="839px" BackColor="#CCCCCC" BorderColor="#999999" BorderStyle="Solid" BorderWidth="3px" CellPadding="4" CellSpacing="2" ForeColor="Black" OnRowDeleting="GridView1_RowDeleting">
             <Columns>
                 <asp:CommandField ShowDeleteButton="True" />
                     <asp:TemplateField HeaderText="Item No.">
@@ -149,9 +149,7 @@
             <SortedDescendingHeaderStyle BackColor="#383838" />
         </asp:GridView>
         <br />
-        <asp:Label ID="Label9" runat="server" ForeColor="#0000CC" Text="Label"></asp:Label>
-&nbsp;<asp:Label ID="Label10" runat="server" ForeColor="Red" Text="Label"></asp:Label>
-        <br />
+&nbsp;<br />
         <br />
         <hr />
         <br />

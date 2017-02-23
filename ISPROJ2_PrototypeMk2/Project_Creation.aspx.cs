@@ -236,7 +236,7 @@ namespace PROJ2_PTE
                 ItemRow = Items.NewRow();
                 ItemRow["QTY."] = TextBox10.Text;
                 ItemRow["Item Code"] = ComboBox1.SelectedItem.Text;
-                ItemRow["Item Description"] = ComboBox1.SelectedValue;
+                ItemRow["Item Description"] = /*ComboBox1.SelectedValue;*/ Label11.Text;
                 Items.Rows.Add(ItemRow);
             }
 
@@ -257,6 +257,18 @@ namespace PROJ2_PTE
         {
             Business get = new Business();
             Label11.Text = get.getItemDesc(ComboBox1.SelectedValue.ToString());
+        }
+
+        protected void GridView1_RowDeleting(object sender, GridViewDeleteEventArgs e)
+        {
+            DataTable dt = (DataTable)Session["ProjItems"];
+            dt.Rows.RemoveAt(e.RowIndex);
+            dt.AcceptChanges();
+
+            GridView1.DataSource = dt;
+            GridView1.DataBind();
+
+            Session.Add("ProjItems", dt);
         }
     }
 }
