@@ -205,7 +205,7 @@ namespace PROJ2_PTE
                         //Items = (DataTable)Session["ProjItems"];
                         Duplicate = true;
                         row = r;
-                        break;
+                        break;//nooo d
                     }
                 } //foreach END ---------AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 
