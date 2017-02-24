@@ -15,12 +15,12 @@
                 <asp:BoundField DataField="proj_code" HeaderText="proj_code" SortExpression="proj_code" />
                 <asp:BoundField DataField="proj_title" HeaderText="proj_title" SortExpression="proj_title" />
                 <asp:BoundField DataField="Column1" HeaderText="Column1" SortExpression="Column1" />
-                <asp:BoundField DataField="proj_leader" HeaderText="proj_leader" SortExpression="proj_leader" />
+                <asp:BoundField DataField="Column2" HeaderText="Column2" ReadOnly="True" SortExpression="Column2" />
                 <asp:BoundField DataField="proj_actualEnd" HeaderText="proj_actualEnd" SortExpression="proj_actualEnd" />
             </Columns>
         </asp:GridView>
     
-        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ISPROJ2ConnectionString %>" SelectCommand="SELECT [proj_code], [proj_title], CONVERT(DATE,[proj_endDate], 120), [proj_leader], [proj_actualEnd] FROM [Project] WHERE ([status] = @status)">
+        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ISPROJ2ConnectionString %>" SelectCommand="SELECT [proj_code], [proj_title], CONVERT(DATE,[proj_endDate], 120), [Personnel].[emp_fname] + ' ' + [Personnel].[emp_lname], [proj_actualEnd] FROM [Project] INNER JOIN [Personnel] ON [Personnel].[emp_user_id] = [Project].[proj_leader] WHERE ([status] = @status)">
             <SelectParameters>
                 <asp:Parameter DefaultValue="5" Name="status" />
             </SelectParameters>
@@ -34,7 +34,14 @@
         <p>
             if session is good, gridview is invisible, and disabled. the BOM is displayed below..</p>
         <p>
-            <asp:GridView ID="GridView2" runat="server" AutoGenerateSelectButton="True">
+            <asp:GridView ID="GridView2" runat="server" AutoGenerateSelectButton="True" AutoGenerateColumns="False">
+                <Columns>
+                    <asp:BoundField DataField="bom_no" HeaderText="BOM No." />
+                    <asp:BoundField DataField="stockdescr" HeaderText="Item" />
+                    <asp:BoundField DataField="bom_poNo" HeaderText="Manual PO" />
+                    <asp:BoundField DataField="stock_code" HeaderText="PPESI No." />
+                    <asp:BoundField DataField="stock_price" HeaderText="Cost" />
+                </Columns>
             </asp:GridView>
         </p>
         <p>

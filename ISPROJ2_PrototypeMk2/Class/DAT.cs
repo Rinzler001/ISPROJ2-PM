@@ -189,7 +189,7 @@ namespace PROJ2_PTE.Class
         public static DataTable projectBill(string projcode)
         {
             Open();
-            SqlCommand cmd = new SqlCommand("SELECT BillofMaterialDetail.bom_no, BillofMaterial.bom_poNo, BillofMaterialDetail.stock_code, Stock.stock_desc, Stock.stock_price "
+            SqlCommand cmd = new SqlCommand("SELECT BillofMaterialDetail.bom_no, BillofMaterial.bom_poNo, BillofMaterialDetail.stock_code, Stock.stock_price, Stock.stock_unit + ': ' + Stock.stock_desc AS stockdescr "
                     + "FROM BillofMaterialDetail "
                         + "INNER JOIN Stock ON Stock.stock_code = BillofMaterialDetail.stock_code "
                         + "INNER JOIN BillofMaterial ON BillofMaterial.bom_no = BillofMaterialDetail.bom_no "
@@ -208,12 +208,7 @@ namespace PROJ2_PTE.Class
         public static DataTable projectBillTsk(string projcode)
         {
             Open();
-            SqlCommand cmd = new SqlCommand("SELECT BillofMaterialDetail.bom_no, BillofMaterial.bom_poNo, BillofMaterialDetail.stock_code, Stock.stock_desc, Stock.stock_price "
-                    + "FROM BillofMaterialDetail "
-                        + "INNER JOIN Stock ON Stock.stock_code = BillofMaterialDetail.stock_code "
-                        + "INNER JOIN BillofMaterial ON BillofMaterial.bom_no = BillofMaterialDetail.bom_no "
-                        + "INNER JOIN Project ON Project.proj_code = BillofMaterial.proj_code "
-                            + "WHERE Project.proj_code = @projcode", SCN);
+            SqlCommand cmd = new SqlCommand("SELECT projTask_id, projTask_descr, projTask_endDate, projTask_actualend, projTask_cost FROM ProjectTask WHERE proj_code = @projcode", SCN);
             cmd.Parameters.AddWithValue("@projcode", projcode);
 
             SqlDataAdapter da = new SqlDataAdapter(cmd);
