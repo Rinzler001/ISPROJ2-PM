@@ -186,5 +186,43 @@ namespace PROJ2_PTE.Class
             Close();
         }
 
+        public static DataTable projectBill(string projcode)
+        {
+            Open();
+            SqlCommand cmd = new SqlCommand("SELECT BillofMaterialDetail.bom_no, BillofMaterial.bom_poNo, BillofMaterialDetail.stock_code, Stock.stock_desc, Stock.stock_price "
+                    + "FROM BillofMaterialDetail "
+                        + "INNER JOIN Stock ON Stock.stock_code = BillofMaterialDetail.stock_code "
+                        + "INNER JOIN BillofMaterial ON BillofMaterial.bom_no = BillofMaterialDetail.bom_no "
+                        + "INNER JOIN Project ON Project.proj_code = BillofMaterial.proj_code "
+                            + "WHERE Project.proj_code = @projcode", SCN);
+            cmd.Parameters.AddWithValue("@projcode", projcode);
+
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            Close();
+
+            return dt;
+        }
+
+        public static DataTable projectBillTsk(string projcode)
+        {
+            Open();
+            SqlCommand cmd = new SqlCommand("SELECT BillofMaterialDetail.bom_no, BillofMaterial.bom_poNo, BillofMaterialDetail.stock_code, Stock.stock_desc, Stock.stock_price "
+                    + "FROM BillofMaterialDetail "
+                        + "INNER JOIN Stock ON Stock.stock_code = BillofMaterialDetail.stock_code "
+                        + "INNER JOIN BillofMaterial ON BillofMaterial.bom_no = BillofMaterialDetail.bom_no "
+                        + "INNER JOIN Project ON Project.proj_code = BillofMaterial.proj_code "
+                            + "WHERE Project.proj_code = @projcode", SCN);
+            cmd.Parameters.AddWithValue("@projcode", projcode);
+
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            Close();
+
+            return dt;
+        }
+
     } //static class END-------------------------------><<
 }

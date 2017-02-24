@@ -111,5 +111,10 @@ namespace PROJ2_PTE.Class
         {
             DAT.insertBOMDet(stockcode, int.Parse(BOMid));
         }
+
+        public DataTable getProjectBill (string projcode)
+        {
+            return DAT.projectBill(projcode);
+        }
     }  // CLASS END HERE -----------------------------------------><<
 }

@@ -169,6 +169,7 @@
     <Content Include="PrCreateSuccess.aspx" />
     <Content Include="Products.aspx" />
     <Content Include="profile.aspx" />
+    <Content Include="ProjectBilling.aspx" />
     <Content Include="Project_BillStatus.aspx" />
     <Content Include="Project_Creation.aspx" />
     <Content Include="Register.aspx" />
@@ -275,6 +276,13 @@
     </Compile>
     <Compile Include="profile.aspx.designer.cs">
       <DependentUpon>profile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectBilling.aspx.cs">
+      <DependentUpon>ProjectBilling.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProjectBilling.aspx.designer.cs">
+      <DependentUpon>ProjectBilling.aspx</DependentUpon>
     </Compile>
     <Compile Include="Project_BillStatus.aspx.cs">
       <DependentUpon>Project_BillStatus.aspx</DependentUpon>
